@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "kag"
+version = "0.1.0"
+description = "Knowledge-Augmented Generation pipeline using Cohere, OpenSPG-style reasoning, and modular components."
+authors = ["John Smith <john@example.com>"]
+readme = "README.md"
+packages = [{ include = "kag" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+cohere = "^4.35.0"
+python-dotenv = "^1.0.0"
+llama-index = "^0.10.0"            
+openai = "*"                       
+networkx = "*"                     
+tqdm = "*"                         
+rich = "*"                         
+pydantic = "*"                     
+numpy = "1.26.4"
+openspg-kag = {git = "https://github.com/OpenSPG/KAG.git"}
+sentence-transformers = "^5.0.0"
+
+[tool.poetry.scripts]
+kag-run = "main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

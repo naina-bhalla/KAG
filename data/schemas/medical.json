@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {"name": "Disease", "description": "A disease or medical condition."},
+    {"name": "Symptom", "description": "A symptom associated with a disease."},
+    {"name": "Medicine", "description": "A drug or treatment used for diseases."},
+    {"name": "HospitalDepartment", "description": "Department in a hospital treating the disease."},
+    {"name": "HumanBodyPart", "description": "A human body part affected by a disease."},
+    {"name": "Doctor", "description": "A medical professional involved in diagnosis or treatment."},
+    {"name": "Hospital", "description": "Medical institution where treatment is given."},
+    {"name": "MedicalAdvice", "description": "Advice or diagnosis provided by doctors."},
+    {"name": "ExaminationTest", "description": "Medical tests used in diagnosis."},
+    {"name": "Indicator", "description": "Indicators or test results associated with a condition."},
+    {"name": "SurgicalOperation", "description": "Medical operation or procedure."},
+    {"name": "HealthFood", "description": "Food or supplements related to health improvement."},
+    {"name": "SpecialMedicalFood", "description": "Food designed for special medical purposes."},
+    {"name": "MedicalEquipment", "description": "Equipment used in medical treatment."},
+    {"name": "MedicalInsuranceReimbursementPolicy", "description": "Insurance policies for reimbursement."},
+    {"name": "ComprehensiveService", "description": "Other healthcare-related services."},
+    {"name": "Population", "description": "The population group the content applies to."},
+    {"name": "Vaccine", "description": "Vaccine used for prevention of diseases."},
+    {"name": "MedicalTerminology", "description": "Medical terms and concepts."}
+  ],
+  "relations": [
+    {
+      "name": "has_symptom",
+      "head": "Disease",
+      "tail": "Symptom",
+      "description": "A symptom commonly associated with a disease."
+    },
+    {
+      "name": "treated_with",
+      "head": "Disease",
+      "tail": "Medicine",
+      "description": "A medication that is used to treat the disease."
+    },
+    {
+      "name": "affects_part",
+      "head": "Disease",
+      "tail": "HumanBodyPart",
+      "description": "The part of the human body affected by the disease."
+    },
+    {
+      "name": "handled_by",
+      "head": "Disease",
+      "tail": "HospitalDepartment",
+      "description": "The department of the hospital that handles the disease."
+    },
+    {
+      "name": "prescribed_by",
+      "head": "Medicine",
+      "tail": "Doctor",
+      "description": "The doctor who prescribes a medicine."
+    },
+    {
+      "name": "complicates",
+      "head": "Disease",
+      "tail": "Disease",
+      "description": "A complication caused by another disease."
+    },
+    {
+      "name": "tested_by",
+      "head": "Disease",
+      "tail": "ExaminationTest",
+      "description": "Tests or diagnostics used to detect the disease."
+    },
+    {
+      "name": "indicated_by",
+      "head": "Disease",
+      "tail": "Indicator",
+      "description": "Medical indicators used to suggest the disease."
+    },
+    {
+      "name": "operated_with",
+      "head": "Disease",
+      "tail": "SurgicalOperation",
+      "description": "Operations or procedures used for treatment."
+    }
+  ]
+}

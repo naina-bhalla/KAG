@@ -1,0 +1,24 @@
+llm:
+  type: cohere
+  api_key: ${COHERE_API_KEY}
+  model: command-r
+
+kag_builder_pipeline:
+  type: base  # only 'base' or 'stream' are valid options
+
+  scanner:
+    type: json_scanner
+    input_path: data/sample_docs/sample_input.json
+
+  parser:
+    type: llm_parser
+
+  triple_generator:
+    type: simple_triple_generator
+
+  schema_path: data/schemas/medical_schema.json
+  triple_prompt: default
+
+solver:
+  planner: json_planner
+  executor: default

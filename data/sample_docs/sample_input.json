@@ -1,0 +1,26 @@
+[
+  {
+    "id": "doc_001",
+    "text": "Diabetes is a chronic condition that affects the body's ability to regulate blood sugar. Common symptoms include frequent urination, fatigue, and blurred vision. It is often treated with insulin and metformin. The Endocrinology department handles such cases."
+  },
+  {
+    "id": "doc_002",
+    "text": "Arthritis is an inflammatory condition that primarily affects joints, causing pain and stiffness. It often impacts older adults. Common treatments include NSAIDs and physical therapy. Patients may consult the Rheumatology department."
+  },
+  {
+    "id": "doc_003",
+    "text": "Asthma is a respiratory condition characterized by wheezing, shortness of breath, and chest tightness. It can be triggered by allergens or exercise. Common medications include inhaled corticosteroids like fluticasone. Pulmonology departments manage asthma cases."
+  },
+  {
+    "id": "doc_004",
+    "text": "Hypertension is a condition where the blood pressure in the arteries is persistently elevated. It may lead to complications such as heart disease and stroke. It is treated with ACE inhibitors like lisinopril. Cardiology departments handle these cases."
+  },
+  {
+    "id": "doc_005",
+    "text": "Migraine is a neurological disorder causing intense headaches, often with nausea and sensitivity to light. Triptans are commonly prescribed medications. Neurology is the primary department for treating migraines."
+  },
+  {
+    "id": "doc_006",
+    "text": "Influenza, commonly known as the flu, is a viral infection that affects the respiratory system. Symptoms include fever, chills, muscle aches, and sore throat. Antiviral medications like oseltamivir can reduce symptoms. Flu vaccines help prevent infection."
+  }
+]
